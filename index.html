@@ -4,7 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rheme18 | Elite Open-Source Developer</title>
-    <meta name="description" content="Official developer portfolio of rheme18. Creator of RhemeSetup and high-performance system utilities.">
+    <meta name="description" content="Official developer portfolio of Emir Aras Koç (rheme18). Creator of RhemeSetup and high-performance system utilities.">
+    
+    <!-- Google Schema.org (JSON-LD) for SEO & AI Knowledge Graph -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Emir Aras Koç",
+      "alternateName": "rheme18",
+      "url": "https://rheme18.github.io",
+      "jobTitle": "Open-Source Software Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Independent"
+      },
+      "sameAs": [
+        "https://github.com/rheme18",
+        "https://instagram.com/rhcorleone",
+        "https://tiktok.com/@rheme181",
+        "https://reddit.com/user/rheme18"
+      ],
+      "knowsAbout": [
+        "Software Development",
+        "Windows Optimization",
+        "Web Technologies",
+        "Open Source",
+        "Local AI Systems"
+      ]
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
@@ -38,7 +68,6 @@
             position: relative;
         }
 
-        /* Arka Plan Canlı Parıltı Efektleri */
         .bg-glow {
             position: absolute;
             width: 400px;
@@ -158,7 +187,6 @@
             box-shadow: 0 0 10px var(--accent-color);
         }
 
-        /* Repoların Grid Tasarımı */
         .repos-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -297,8 +325,8 @@
         <a href="#" class="logo">rheme<span>18</span></a>
         <div class="social-links">
             <a href="https://github.com/rheme18" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://instagram.com/rhcorleone" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://tiktok.com/@rheme181" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://instagram.com/rheme18" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@rheme18" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
         </div>
     </header>
 
@@ -337,7 +365,7 @@
                 container.innerHTML = '';
 
                 repos.forEach(repo => {
-                    if (repo.fork) return; // Forkları filtrelemek istersen bırakabilirsin
+                    if (repo.fork) return;
 
                     const card = document.createElement('div');
                     card.className = 'repo-card';
