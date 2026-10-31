@@ -21,6 +21,9 @@
       },
       "sameAs": [
         "https://github.com/rheme18",
+        "https://x.com/rheme181",
+        "https://dev.to/rheme18",
+        "https://hashnode.com/@rheme18",
         "https://instagram.com/rhcorleone",
         "https://tiktok.com/@rheme181",
         "https://reddit.com/user/rheme18"
@@ -122,12 +125,14 @@
 
         .social-links {
             display: flex;
-            gap: 1.25rem;
+            gap: 1.1rem;
+            flex-wrap: wrap;
+            justify-content: flex-end;
         }
 
         .social-links a {
             color: var(--text-secondary);
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             transition: all 0.3s ease;
         }
 
@@ -312,7 +317,7 @@
 
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.4rem; }
-            header { padding: 1.5rem 5%; }
+            header { padding: 1.5rem 5%; flex-direction: column; gap: 1rem; }
         }
     </style>
 </head>
@@ -325,8 +330,11 @@
         <a href="#" class="logo">rheme<span>18</span></a>
         <div class="social-links">
             <a href="https://github.com/rheme18" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://instagram.com/rheme18" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://tiktok.com/@rheme18" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://x.com/rheme181" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://dev.to/rheme18" target="_blank" title="Dev.to"><i class="fab fa-dev"></i></a>
+            <a href="https://hashnode.com/@rheme18" target="_blank" title="Hashnode"><i class="fas fa-blog"></i></a>
+            <a href="https://instagram.com/rhcorleone" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@rheme181" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
         </div>
     </header>
 
@@ -345,7 +353,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 rheme18. Built with elite engineering.</p>
+        <p>&copy; 2026 Emir Aras Koç (rheme18). Built with elite engineering.</p>
     </footer>
 
     <script>
