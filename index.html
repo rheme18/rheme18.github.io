@@ -183,13 +183,19 @@
             color: var(--text-secondary);
             font-size: 1.25rem;
             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
             width: 40px;
             height: 40px;
             border-radius: 10px;
             border: 1px solid transparent;
+            text-decoration: none !important; /* Alt çizgileri kökten keser */
+        }
+
+        .social-links a i {
+            display: inline-block;
+            text-decoration: none;
         }
 
         .social-links a:hover {
