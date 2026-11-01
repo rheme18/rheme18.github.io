@@ -131,7 +131,7 @@
         }
 
         header {
-            padding: 1.75rem 6%;
+            padding: 1.75rem 4%; /* Kenar boşluklarını biraz daraltarak sağa/sola genişletir */
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -175,8 +175,9 @@
 
         .social-links {
             display: flex;
-            gap: 1.25rem;
+            gap: 0.5rem; /* İkonlar arası mesafeyi iyice daralttık (Eski hali 1.25rem idi) */
             align-items: center;
+            margin-left: auto; /* Otomatik olarak sağa dayar */
         }
 
         .social-links a {
@@ -214,9 +215,10 @@
         }
 
         .hero {
-            text-align: center;
+            text-align: left; /* Yazıları sola yaslar */
             margin-bottom: 5rem;
             animation: fadeIn 0.8s ease-out;
+            padding-left: 0; /* Sol boşluğu sıfırlar */
         }
 
         .hero-title-container {
