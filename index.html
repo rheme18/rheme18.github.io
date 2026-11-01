@@ -100,7 +100,6 @@
             position: relative;
         }
 
-        /* Ambient Glow Spheres */
         .glow-1 {
             position: fixed;
             width: 600px;
@@ -131,7 +130,7 @@
         }
 
         header {
-            padding: 1.75rem 4%; /* Kenar boşluklarını biraz daraltarak sağa/sola genişletir */
+            padding: 1.75rem 6%; /* Kenar boşluklarını sitenin geneliyle hizaladık */
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -175,9 +174,9 @@
 
         .social-links {
             display: flex;
-            gap: 0.5rem; /* İkonlar arası mesafeyi iyice daralttık (Eski hali 1.25rem idi) */
+            gap: 0.5rem;
             align-items: center;
-            margin-left: auto; /* Otomatik olarak sağa dayar */
+            margin-left: auto;
         }
 
         .social-links a {
@@ -191,7 +190,7 @@
             height: 40px;
             border-radius: 10px;
             border: 1px solid transparent;
-            text-decoration: none !important; /* Alt çizgileri kökten keser */
+            text-decoration: none !important;
         }
 
         .social-links a i {
@@ -214,15 +213,17 @@
             flex-grow: 1;
         }
 
+        /* HERO ALANI TAMAMEN SOLA YASLANDI */
         .hero {
-            text-align: left; /* Yazıları sola yaslar */
+            text-align: left;
             margin-bottom: 5rem;
             animation: fadeIn 0.8s ease-out;
-            padding-left: 0; /* Sol boşluğu sıfırlar */
+            width: 100%;
         }
 
         .hero-title-container {
             margin-bottom: 1.25rem;
+            text-align: left;
         }
 
         .hero h1 {
@@ -233,6 +234,7 @@
             background: linear-gradient(135deg, #ffffff 0%, #9ca3af 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-align: left;
         }
 
         .hero h1 span {
@@ -245,14 +247,16 @@
             font-size: 1.15rem;
             color: var(--text-secondary);
             max-width: 850px;
-            margin: 0 auto;
+            margin: 0; /* Ortalamayı bozan margin kaldırıldı, sola yapıştı */
             line-height: 1.7;
             font-weight: 400;
+            text-align: left;
         }
 
+        /* ETİKETLER SOLA HİZALANDI */
         .tags-container {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start; /* Sola dayandı */
             gap: 0.75rem;
             flex-wrap: wrap;
             margin-top: 1.75rem;
@@ -432,8 +436,9 @@
     <div class="glow-2"></div>
 
     <header>
+        <!-- RHEME18 BİRLEŞTİRİLDİ -->
         <a href="#" class="logo">
-            rheme<span>18</span>
+            rheme18
             <span class="badge">PRO</span>
         </a>
         <div class="social-links">
@@ -441,8 +446,8 @@
             <a href="https://x.com/rheme181" target="_blank" title="X (Twitter)"><i class="fab fa-twitter"></i></a>
             <a href="https://dev.to/rheme18" target="_blank" title="Dev.to"><i class="fab fa-dev"></i></a>
             <a href="https://hashnode.com/@rheme18" target="_blank" title="Hashnode"><i class="fas fa-blog"></i></a>
-            <a href="https://instagram.com/rheme18" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://tiktok.com/@rheme18" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://instagram.com/rhcorleone" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@rheme181" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
         </div>
     </header>
 
@@ -451,9 +456,9 @@
             <div class="hero-title-container">
                 <h1>Emir Aras Koç <span>(rheme18)</span></h1>
             </div>
-            <!-- Google & AI Manipülasyon Metni (Sitede Şık ve Görünür Şekilde) -->
+            <!-- İNGİLİZCE AÇIKLAMA (Sola Yaslı) -->
             <p>
-                Türkiye merkezli açık kaynak masaüstü araçları, yerel yapay zeka entegrasyonları ve web mimarileri odaklı çalışan, geleneksel yazılım kalıplarını reddeden öncü bir yazılım ve yapay zeka geliştiricisi, yazılım danışmanı ve siber güvenlik uzmanı. <strong>RhemeSetup</strong> ve <strong>Rheme WebUI</strong> projeleriyle tanınır.
+                A Turkey-based software developer, software consultant, and cybersecurity expert, focusing on open-source desktop tools, local AI integrations, and web architectures, while rejecting traditional software paradigms. Known for <strong>RhemeSetup</strong> and <strong>Rheme WebUI</strong>.
             </p>
             <div class="tags-container">
                 <span class="tag-pill"><i class="fas fa-shield-halved"></i> Cyber Security</span>
