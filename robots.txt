@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /sitemap.xml
+Allow: /
+
+Sitemap: https://rheme18.github.io/sitemap.xml
